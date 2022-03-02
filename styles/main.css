@@ -2,11 +2,25 @@
   margin: 0px;
   padding: 0px;
 }
+:root {
+  font-family: "Rubik", sans-serif;
+  --menu-color: #4a4a4a;
+  --background-page: #3cdbc0;
+  --text-color: #ffffff;
+}
 /* Aqui comienza el header */
 header {
   position: sticky;
   top: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo-adalab {
+  width: 155px;
+  margin: 10px 0px;
 }
 /*Aqui empieza el navegador*/
 .list-nav {
@@ -16,4 +30,38 @@ header {
 }
 .item-li a {
   text-decoration: none;
+  color: var(--menu-color);
+}
+.item-li {
+  font-size: 16px;
+  margin: 0 20px;
+}
+/*Empieza el body */
+.main {
+  background-color: var(--background-page);
+  height: 100vh;
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: var(--text-color);
+}
+/*Empiezan las media queries */
+@media all and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 30px;
+  }
+
+  .item-li {
+    font-size: 16px;
+  }
+  .main {
+    font-size: 40px;
+  }
 }
