@@ -1,0 +1,19 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* Aqui comienza el header */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+/*Aqui empieza el navegador*/
+.list-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.item-li a {
+  text-decoration: none;
+}
